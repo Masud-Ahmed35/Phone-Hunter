@@ -11,13 +11,55 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
-<body>
-    <header>
-        <h1>Welcome To Hunting Phone!!!</h1>
+<body class="">
+    <header class="contaoner">
+        <h1 class="text-center mt-3 mb-5 text-warning shadow-lg pb-4 fw-bold fst-italic">Welcome To Hunting My Phone!!!
+        </h1>
     </header>
 
     <main>
 
+        <section class="container my-3">
+            <div class="mb-3">
+                <input id="search-field" type="email" class="form-control w-50 d-inline me-3 p-2 ps-4 border-info"
+                    id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search Your Phone">
+                <div id="btn-search" class="btn btn-primary px-5 pb-2 fs-5 fw-semibold">Search</div>
+            </div>
+        </section>
+
+        <!-- Phone Card Section -->
+        <section class="container">
+            <div id="phone-container" class="row row-cols-1 row-cols-md-3 g-4 pb-4 shadow">
+
+            </div>
+            <div id="show-more" class="d-flex d-none justify-content-center align-items-center my-3">
+                <button id="btn-show-more" class="fw-semibold fs-4 py-2 px-4 rounded-pill btn btn-primary">Show
+                    More</button>
+            </div>
+            <div id="no-phone-found" class="text-danger mt-5 d-none">
+                <h3>No Phone Found!!! Please Search Again...</h3>
+            </div>
+        </section>
+        <!-- Modal For Phones Detail  -->
+        <section>
+            <!-- Modal -->
+            <div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div id="modal-details" class="modal-content">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spinner Section -->
+        <section id="spinner" class="container d-none">
+            <div style="height: 300px;" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- JavaScript Link -->
